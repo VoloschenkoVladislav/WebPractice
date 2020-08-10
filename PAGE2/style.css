@@ -1,0 +1,164 @@
+/* Описание корневых классов и псевдоклассов -------------------------------------- */
+
+:root {
+    box-sizing: border-box;
+    --link-before: rgb(54, 57, 196);
+    --light-blue-border:  rgb(165, 195, 214);
+}
+
+*, :before, :after {
+    box-sizing: inherit;
+}
+
+body {
+    display: block;
+    padding: 0px;
+}
+
+main {
+    width: calc(100% - 180px);
+    margin-left: 180px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* Боковое меню ------------------------------------------------------------------- */
+
+aside {
+    float: left;
+    width: 180px;
+    background: rgb(245, 245, 245);
+    margin: 0px;
+    padding-bottom: 3em;
+}
+
+#logo {
+    width: 8.5rem;
+    margin-left: 0.4em;
+}
+
+.sidebar-container {
+    margin-top: 1.5em;
+    margin-left: 1em;
+    font-size: 0.85rem;
+}
+
+.sidebar-header {
+    color: grey;
+    text-decoration: underline;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+.sidebar-container ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar-container li {
+    list-style: none;
+    margin-top: 0.15em;
+}
+
+.sidebar-container a {
+    color: var(--link-before, blue);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* Строка регистрации и инициализации --------------------------------------------- */
+
+.account-cell {
+    position: absolute;
+    width: auto;
+    right: 10px;
+    font-size: 0.85rem;
+}
+
+#user-logo {
+    float: left;
+    height: 0.9em;
+    margin-top: 0.3em;
+}
+
+.account-cell-warning {
+    margin: 0.2em;
+    color: grey;
+    display: inline-block;
+}
+
+.account-cell a {
+    margin: 0.2em;
+    color: var(--link-before, blue);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* Навигация в шапке и поисковая строка ------------------------------------------- */
+
+header {
+    width: 100%;
+    padding-top: 35px;
+    font-size: 0.9rem;
+}
+
+.header-cell-active {
+    color: black;
+    background-color: white;
+    width: auto;
+    display: inline-block;
+    padding: 0.6em;
+    border: 1px solid var(--light-blue-border, blue);
+    border-top: none;
+    border-bottom: none;
+}
+
+.header-cell-active:hover {
+    text-decoration: none;
+}
+
+.header-cell-inactive {
+    color: var(--link-before, blue);
+    background-color: rgb(220, 235, 238);
+    width: auto;
+    display: inline-block;
+    padding: 0.6em;
+    border: 1px solid var(--light-blue-border, blue);
+    border-top: none;
+}
+
+.left-part-of-header {
+    float: left;
+}
+
+.right-part-of-header {
+    float: right;
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+/* -------------------------------------------------------------------------------- */
