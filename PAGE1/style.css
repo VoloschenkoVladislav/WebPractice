@@ -18,11 +18,12 @@ header {
 
 body {
     margin: 0% 20%;
+    height: 100vh;
     background-color: white;
 }
 
 .article {
-    padding: 0% 3% 1%;
+    padding: 0% 3% 3%;
     margin: 0px;
     background-color: inherit;
     font-size: 1.2rem;
@@ -36,6 +37,7 @@ body {
 
 .main-info {
     background-color: rgb(212, 169, 252);
+    display: table-cell;
     border: 0px;
 }
 
@@ -56,14 +58,9 @@ body {
     padding: 0.8rem;
 }
 
-.image-block {
-    float: left;
-    background-color: inherit;
-    width: 50%;
-}
-
 #brain {
-    width: 100%;
+    width: 50%;
+    display: table-cell;
 }
 
 .info {
