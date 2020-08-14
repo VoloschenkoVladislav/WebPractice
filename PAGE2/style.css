@@ -2,6 +2,8 @@
 
 :root {
     box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 0.9em;
     --link-before: rgb(54, 57, 196);
     --light-blue-border:  rgb(165, 195, 214);
     --light-grey: rgb(247, 247, 247);
@@ -193,8 +195,7 @@ header {
 .main-container {
     padding-top: 1em;
     border: 1px solid var(--light-blue-border, blue);
-    border-top: none;
-    box-sizing: content-box;
+    border-top: none;  
 }
 
 .welcome-container,.content-container {
@@ -257,9 +258,22 @@ header {
     font-weight: bold;
 }
 
+.wrapper-wrapper {
+    display: flex;
+}
+
+.content-wrapper {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    align-items: baseline;
+    box-sizing: content-box;  
+}
+
 .content-container {
     padding: 1.5em;
-    width: 48%;
+    width: 100%;
     overflow: hidden;
 }
 
