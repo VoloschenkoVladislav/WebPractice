@@ -25,7 +25,7 @@ main {
 }
 
 a {
-    color: var(--link-before);
+    color: var(--link-before, blue);
 }
 
 a.important-link {
@@ -260,6 +260,7 @@ header {
 
 .wrapper-wrapper {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -271,6 +272,12 @@ header {
     box-sizing: content-box;  
 }
 
+@media screen and (max-width: 1100px) {
+    .content-wrapper {
+        width: 100%;
+    }
+}
+
 .content-container {
     padding: 1.5em;
     width: 100%;
@@ -279,17 +286,23 @@ header {
 
 .content-container img {
     float: right;
-    margin: 0.6em;
-    width: auto;
+    margin-left: 0.6em;
+    margin-right: auto;
 }
 
-.content-container ul {
-    margin: 0px;
+.content-container li {
+    margin: 0.3em;
 }
 
-#img-1-1 {
-    width: 12em;
+#content-block-2 ul img{
     margin: 0.6em;
+    height: 6em;
+}
+
+.content-container .favorite-list img {
+    height: 3em;
+    float: left;
+    margin: 0.2em;
 }
 
 .pre-header-content {
@@ -298,11 +311,24 @@ header {
     margin: 0em;
 }
 
+#content-block-7 p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#day-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-content {
     margin: 0.2em 0 0.4em;
     color: black;
     font-weight: normal;
     width: auto;
+    font-size: 1.55em;
+    font-family: serif;
 }
 
 .content-container:hover a .header-content {
@@ -313,8 +339,66 @@ header {
     float: right;
 }
 
-.button img {
+.content-container .button img {
+    width: auto;
     height: 100%;
 }
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Нижняя часть основного контента ------------------------------------------------ */
+
+.bottom-container {
+    width: 100%;
+    padding: 5%;
+}
+
+.bottom-container > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.bottom-container .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.bottom-container h2 {
+    text-align: center;
+}
+
+.bottom-container .link-container .link {
+    width: 25%;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    .bottom-container .link-container .link {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bottom-container .link-container .link {
+        width: 50%;
+    }
+}
+
+.bottom-container .link-container .link img {
+    float: left;
+    margin-right: 0.5em;
+}
+
+.bottom-container .link-container .link p {
+    margin: 0.5em;;
+}
+
+
 
 /* -------------------------------------------------------------------------------- */
