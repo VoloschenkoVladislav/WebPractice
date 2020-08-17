@@ -17,11 +17,13 @@
 body {
     display: block;
     padding: 0px;
+    background: rgb(245, 245, 245);
 }
 
 main {
     width: calc(100% - 180px);
     margin-left: 180px;
+    background: white;
 }
 
 a {
@@ -50,7 +52,6 @@ a:hover {
 aside {
     float: left;
     width: 180px;
-    background: rgb(245, 245, 245);
     margin: 0px;
     padding-bottom: 3em;
 }
@@ -400,5 +401,29 @@ header {
 }
 
 
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Подвал ------------------------------------------------------------------------- */
+
+footer {
+    margin-left: 180px;
+    font-size: 0.85rem;
+    padding: 1em;
+}
+
+footer ul {
+    padding-left: 0px;
+}
+
+footer li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+}
 
 /* -------------------------------------------------------------------------------- */
