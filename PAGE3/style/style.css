@@ -1,0 +1,499 @@
+:root {
+    --black: black;
+    --white: white;
+    --orange: rgb(253, 148, 49);
+    --light-grey: rgb(230, 230, 230);
+    --grey: rgb(145, 145, 145);
+    --dark-grey: rgb(51, 51, 51);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+body > * {
+    padding-left: 7em;
+    padding-right: 7em;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.white-button {
+    border: solid var(--white, white) 1px;
+    padding: 0.5em 1em;
+    color: var(--white, white);
+}
+
+.orange-button {
+    background: var(--orange, orange);
+    padding: 0.5em 1em;
+    color: var(--white, white);
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side {
+    float: right;
+}
+
+
+
+
+
+
+
+/* Background colors -------------------------------------------------------------- */
+
+header,.presentation,footer {
+    background: var(--black, black);
+    color: var(--white, white);
+}
+
+.social-media,.sub-list,.advertise-block,.reviews,.contact {
+    background: var(--white, white);
+    color: var(--grey, grey);
+}
+
+.tabs,.standart-picture-section,.pricing-options {
+    background: var(--light-grey, white);
+    color: var(--grey, grey);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* Header ------------------------------------------------------------------------- */
+
+header {
+    height: 4em;
+}
+
+header img {
+    float: left;
+    height: 2em;
+    margin: 1em;
+}
+
+header ul {
+    float: right;
+    margin-right: 0px;
+    margin-left: auto;
+    list-style: none;
+    color: var(--grey, grey);
+    font-weight: bold;
+    display: flex;
+}
+
+header ul li {
+    margin: auto 1.2em;
+    align-items: center;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Presentation part -------------------------------------------------------------- */
+
+.presentation {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+}
+
+.presentation .left-side {
+    float: left;
+    width: 50%;
+    padding-right: 8em;
+}
+
+.presentation .right-side {
+    float: right;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.presentation .right-side form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0em 4em;
+    height: 100%;
+}
+
+.presentation .right-side form #free-trial {
+    color: var(--black, black);
+    background-color: var(--light-grey, white);
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0px;
+}
+
+#free {
+    color: var(--orange, orange);
+}
+
+.presentation .right-side form input {
+    border: none;
+    outline: none;
+    display: block;
+    height: 4.5em;
+    padding-left: 2em;
+}
+
+.presentation .right-side form #reg-accept {
+    color: var(--white, white);
+    background-color: var(--orange, orange);
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Social-media part -------------------------------------------------------------- */
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media .left-side {
+    width: 40%;
+}
+
+.social-media .right-side {
+    width: 60%;
+}
+
+.social-media .left-side h3 {
+    color: var(--black, black);
+}
+
+.social-media .right-side img {
+    height: 100%;
+    margin-left: auto;
+    margin-right: 1em;
+    float: right;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Tabs part ---------------------------------------------------------------------- */
+
+.tabs {
+    display: flex;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.tabs ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.tabs h3 {
+    color: var(--black, black);
+}
+
+.tabs .active {
+    display: block;
+    margin: 1px;
+    width: 7em;
+    height: 7em;
+    background: var(--orange, orange);
+    color: var(--white, white);
+    text-align: center;
+    line-height: 7em;
+}
+
+.tabs .inactive {
+    display: block;
+    margin: 1px;
+    width: 7em;
+    height: 7em;
+    background: var(--dark-grey, grey);
+    color: var(--white, white);
+    text-align: center;
+    line-height: 7em;
+}
+
+.tabs .download-tab {
+    margin-left: 8em;
+    margin-right: 15em;
+}
+
+.tabs .download-tab > * {
+    display: inline-block;
+}
+
+.tabs .download-tab .orange-button {
+    margin-top: 2em;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Sub list part ------------------------------------------------------------------ */
+
+.sub-list {
+    display: flex;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.sub-list .right-side {
+    margin-left: 8em;
+}
+
+.sub-list .right-side ul img {
+    display: block;
+    float: left;
+    margin-right: 2em;
+}
+
+.sub-list ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.sub-list h3 {
+    color: var(--black, black);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Standart picture part ---------------------------------------------------------- */
+
+.standart-picture-section {
+    display: flex;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.standart-picture-section .left-side {
+    margin-left: 8em;
+}
+
+.standart-picture-section h3 {
+    color: var(--black, black);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+/* Advertise part ----------------------------------------------------------------- */
+
+.advertise-block {
+    text-align: center;
+}
+
+.advertise-block ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 3em;
+}
+
+.advertise-block li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.advertise-block li img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advertise-block h1,.advertise-block h3 {
+    color: var(--black, black);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Pricing option ------------------------------------------------------------------ */
+
+.pricing-options {
+    text-align: center;
+}
+
+.pricing-options h1 {
+    color: var(--black, black);
+}
+
+.pricing-options ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.pricing-options > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    align-items: flex-end;
+}
+
+.pricing-options .subscribe-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.pricing-options .subscribe-cell > * {
+    margin: 0px;
+}
+
+.pricing-options .subscribe-cell li {
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.pricing-options .subscribe-cell .subscribe-name {
+    color: var(--white, white);
+    background: var(--dark-grey, black);
+    border-bottom: solid 2px var(--white, white);    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pricing-options .subscribe-cell .subscribe-price {
+    color: var(--white, white);
+    background: var(--dark-grey, black);
+    font-size: 3em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pricing-options .subscribe-cell .subscribe-payment {
+    color: var(--light-grey, white);
+    background: var(--dark-grey, black);
+    font-size: 0.7em;
+    border-bottom: solid 5px var(--orange, orange);
+    padding-bottom: 1rem;
+}
+
+.pricing-options .subscribe-cell .subscribe-popularity {
+    color: var(--white, white);
+    background: var(--orange, orange);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.pricing-options .subscribe-cell .subscribe-options li {
+    margin-bottom: 1px;
+    color: var(--light-grey, grey);
+    background: var(--white, white);
+    font-size: 0.7em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Reviwes part ------------------------------------------------------------------- */
+
+.reviews {
+    text-align: center;
+}
+
+.reviews h1 {
+    color: var(--black, black);
+}
+
+.reviews ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.reviews ul h3 {
+    color: var(--black, black);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.reviews .thoughts {
+    position: relative;
+    bottom: 150px;
+    left: 10px;
+    width: 250px;
+    margin-bottom: -100px;
+    text-align: center;
+}
+
+.reviews .avatar {
+    float: left;
+    margin-right: 1em;
+}
+
+.reviews .job {
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Axure design part -------------------------------------------------------------- */
+
+.stylish-axure-design {
+    text-align: center;
+    background: var(--dark-grey, black);
+    color: var(--white, white);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* -------------------------------------------------------------------------------- */
